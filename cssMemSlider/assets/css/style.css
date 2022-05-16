@@ -159,3 +159,25 @@ input {
         opacity: 1;
     }
 }
+
+@media screen and (max-width: 47.938rem) {
+    .controls {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .text {
+        flex-basis: 100%;
+        font-size: 1rem;
+    }
+
+    .buttons {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        flex-basis: 100%;
+        order: -1;
+        margin-bottom: 1rem;
+    }
+}
