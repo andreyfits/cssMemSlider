@@ -100,3 +100,62 @@ input {
     border: solid 0.1rem var(--color-white);
     background-color: var(--color-white);
 }
+
+#slide1:checked ~ .slider {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .slider {
+    transform: translateX(calc(-20% * 1 - 1rem / 4));
+}
+
+#slide3:checked ~ .slider {
+    transform: translateX(calc(-20% * 2 - 2rem / 4));
+}
+
+#slide4:checked ~ .slider {
+    transform: translateX(calc(-20% * 3 - 3rem / 4));
+}
+
+#slide1:checked ~ .controls > .description > #description1,
+#slide2:checked ~ .controls > .description > #description2,
+#slide3:checked ~ .controls > .description > #description3,
+#slide4:checked ~ .controls > .description > #description4 {
+    visibility: visible;
+    height: auto;
+    opacity: 1;
+    transform: translateX(0);
+    animation: fadeIn;
+    transition: 1s;
+}
+
+#slide1:checked ~ .controls > .buttons > #select1 > span,
+#slide2:checked ~ .controls > .buttons > #select2 > span,
+#slide3:checked ~ .controls > .buttons > #select3 > span,
+#slide4:checked ~ .controls > .buttons > #select4 > span {
+    border: solid 0.1rem var(--color-green);
+    background-color: transparent;
+}
+
+#slide1:checked ~ .controls > .buttons > #select1:hover > span,
+#slide2:checked ~ .controls > .buttons > #select2:hover > span,
+#slide3:checked ~ .controls > .buttons > #select3:hover > span,
+#slide4:checked ~ .controls > .buttons > #select4:hover > span {
+    border: solid 0.1rem var(--color-white);
+}
+
+#slide1:checked ~ .controls > .buttons > #select1:active > span,
+#slide2:checked ~ .controls > .buttons > #select2:active > span,
+#slide3:checked ~ .controls > .buttons > #select3:active > span,
+#slide4:checked ~ .controls > .buttons > #select4:active > span {
+    border: solid 0.1rem var(--color-white);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
