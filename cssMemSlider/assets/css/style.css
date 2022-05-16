@@ -1,6 +1,7 @@
 :root {
     --color-black: #000000;
     --color-white: #FFFFFF;
+    --color-green: #1ca14d;
 }
 
 * {
@@ -47,4 +48,55 @@ input {
 .slide img {
     width: 100%;
     height: auto;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3%;
+}
+
+.text {
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    transform: translateX(2.5rem);
+}
+
+.buttons {
+    display: flex;
+    background-color: var(--color-black);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.8rem;
+    height: 2.2rem;
+}
+
+.button > span {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border: solid 0.1rem var(--color-green);
+    background-color: var(--color-green);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:hover > span {
+    border: solid 0.1rem var(--color-white);
+    background-color: var(--color-white);
+}
+
+.button:active > span {
+    border: solid 0.1rem var(--color-white);
+    background-color: var(--color-white);
 }
