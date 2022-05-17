@@ -52,7 +52,6 @@ input {
 
 .controls {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     gap: 1rem;
 }
@@ -73,8 +72,8 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1.8rem;
-    height: 2.2rem;
+    width: 1.75rem;
+    height: 1.2rem;
 }
 
 .button > span {
@@ -84,7 +83,7 @@ input {
     border: solid 0.1rem var(--color-green);
     background-color: var(--color-green);
     border-radius: 50%;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .button:hover {
@@ -178,6 +177,5 @@ input {
         justify-content: center;
         flex-basis: 100%;
         order: -1;
-        margin-bottom: 1rem;
     }
 }
