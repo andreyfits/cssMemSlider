@@ -124,7 +124,6 @@ input {
     height: auto;
     opacity: 1;
     transform: translateX(0);
-    animation: fadeIn;
     transition: 1s;
 }
 
@@ -148,15 +147,6 @@ input {
 #slide3:checked ~ .controls > .buttons > #select3:active > span,
 #slide4:checked ~ .controls > .buttons > #select4:active > span {
     border: solid 0.1rem var(--color-white);
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 @media screen and (max-width: 47.938rem) {
